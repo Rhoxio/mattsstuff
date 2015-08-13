@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto Slab">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  <script src="javascripts/main.js"></script>
+  <script src="javascripts/test.js"></script>
+  <!--
+  <script src="javascripts/project-images.js"></script>
+  <script src="javascripts/skill-images.js"></script>
+-->
+<script src="javascripts/contact-icons.js"></script>
+</head>
+
+<title>Matt Villwock's Site</title>
+<body>
+<!--
+*************************
+MAIN DISPLAY (Hero/Header)
+*************************
+-->
+<section class='main-display'>
+  <header class='header'>
+    <nav class='header-nav'>
+      <!-- <a href='#' class='about'>About Me</a>
+      <a href='#' class='projects-link'>Projects</a> -->
+      <a href='http://restisrust.com/' class='blog'>Blog</a>
+      <a href='https://resume.creddle.io/resume/g2madtig8bw' class='active resume'>Resume</a>
+      <a href='mailto:mtvillwock@gmail.com'><button class='contact btn-primary'>Contact</button></a>
+    </nav>
+
+    <h1 class='supertag'>
+      { Matt Villwock: "Full Stack Dev" }
+    </h1>
+
+    <div class="name-desc">
+      <p>What dream can I help you build?</p>
+      <!-- <p class='tagline'></p> -->
+    </div>
+  </header>
+</section>
+
+<!-- I like this version of the site much better. I would probably plan out sections similar to how my own site is laid out. You have taken a great first step by realizing that all of this does, in fact, need to be separated. You mainly seem to need help figuring out how to style this stuff. Most of my comments will be in the SCSS file I think.  -->
+
+
+<div class='main-wrap'>
+
+  <h3 class='about-me-heading'>This Is the Header For This Section</h3>
+  <p class='standard-text'> This is the text for this section. </p>
+
+  <div class='item-container'>
+
+    <div class='item-one'>
+
+      This is a perfectly centered div. Works on all screen sizes.
+
+    </div>
+
+    <div class='item-two'>
+
+      <div class='nested-element'>This is an element that has been nested within another that has already been centered. As you can see, I used the padding to shift it away from the edge of the div. This is important if you want to design balanced-looking pages.</div>
+
+    </div>
+
+    <div class='item-three'>
+
+      <div class='nested-element-one'>These are evenly spaced based on the total width of the page. Making them 30% wide means we have a whole 10% total to play with for whitespace and positioning.
+      </div>
+
+      <div class='nested-element-two'>If you look at the SASS, you will notice that I have given the middle element a margin-left of 5%. That is exactly half of the 10% we have left to play with. That means...</div>
+
+      <div class='nested-element-three'>This element only needs to be floated to the right to line everything up correctly. There is a natural 5% that doesn't have to be padded out here.</div>
+    </div>
+    
+  </div>
+
+</div>
+
+<footer class="contact">
+  <div class="icons clearfix">
+    <div class="icon">
+      <a href="mailto:mtvillwock@gmail.com">
+        <h3>Contact Me</h3>
+      </a>
+      <img src="imgs/email-icon.png" >
+    </div>
+    <div class="icon">
+      <a href="https://www.github.com/mtvillwock">
+       <h3>See My Code</h3>
+     </a>
+     <img src="imgs/github-mark.png" >
+   </div>
+   <div class="icon">
+    <a href="http://restisrust.com">
+      <h3>Read My Blog</h3>
+    </a>
+    <img src="imgs/restisrust-logo.png" >
+  </div>
+  <div class="icon">
+    <a href="https://www.linkedin.com/in/matthewvillwock">
+      <h3>LinkedIn Profile</h3>
+    </a>
+    <img src="imgs/linkedin-icon.png" >
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
